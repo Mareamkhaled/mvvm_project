@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:mvvm_project/features/gold/presentation/screens/gold_screen.dart";
+import "package:mvvm_project/features/silver/presentation/screens/silver_screen.dart";
 import "../presentation/home_screen.dart";
 
 import "app_routes.dart";
@@ -11,6 +12,8 @@ class AppRouting {
         return MaterialPageRoute(builder: (context) => const HomeScreen());
       case AppRoutes.gold:
         return MaterialPageRoute(builder: (context) => const GoldScreen());
+      case AppRoutes.silver:
+        return MaterialPageRoute(builder: (context) => const SilverScreen());
 
       default:
         return MaterialPageRoute(builder: (_) => const NoRouteScreen());
