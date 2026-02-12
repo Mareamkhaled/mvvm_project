@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../constants/app_colors.dart';
+
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
@@ -22,7 +24,7 @@ class CustomButton extends StatelessWidget {
           child: Text(
             text,
             style: TextStyle(
-              color: Colors.black,
+              color: AppColors.myBlack,
               fontSize: 14,
               fontWeight: FontWeight.w500,
             ),

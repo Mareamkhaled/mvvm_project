@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_project/core/routing/app_routes.dart';
 
+import 'core/di/setup.dart';
 import 'core/routing/app_routing.dart';
 
-void main() {
+void main(){
+  setup();
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
